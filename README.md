@@ -61,7 +61,7 @@ This project builds an **end-to-end, explainable credit risk system**:
 > ⏳ **Heads up:** the app is hosted on a free Render instance, so the first request after a period of inactivity may take ~30–60 seconds while the server wakes up.
 
 <!-- Replace with a real screenshot / GIF of your app -->
-<img src="./assets/demo.gif" alt="App demo" width="85%"/>
+<img src="./assets/demo.png" alt="App demo" width="85%"/>
 
 </div>
 
