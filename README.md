@@ -99,19 +99,6 @@ This project builds an **end-to-end, explainable credit risk system**:
 
 ---
 
-## 🏗️ System Architecture
-
-```mermaid
-flowchart LR
-    A[👤 User / Loan Officer] -->|fills application form| B[🖥️ Static Web UI]
-    B -->|POST /predict · JSON| C[⚡ FastAPI Service]
-    C -->|validate with Pydantic| D{📋 LoanApplication}
-    D --> E[(🧠 XGBoost Pipeline<br/>credit_risk_model2.pkl)]
-    E -->|default probability| F[🎚️ Threshold<br/>best_threshold2.pkl]
-    F -->|p ≥ threshold ?| G[✅ Low Risk / 🚨 High Risk]
-    G -->|JSON response| B
-```
-
 **Request lifecycle**
 
 1. The UI sends the applicant's details as JSON to `POST /predict`.
