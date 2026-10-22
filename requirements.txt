@@ -1,0 +1,12 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pandas==2.2.3
+numpy==1.26.4
+joblib==1.4.2
+
+# These two MUST match the versions you used to train and save the model.
+# Run this where you trained it:  pip freeze | findstr /i "xgboost scikit-learn"
+# Then replace the lines below with those exact versions.
+xgboost==2.1.3
+scikit-learn==1.5.2
